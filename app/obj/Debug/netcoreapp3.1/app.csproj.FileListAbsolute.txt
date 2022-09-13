@@ -1,0 +1,13 @@
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.csprojAssemblyReference.cache
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.AssemblyInfoInputs.cache
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.AssemblyInfo.cs
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.csproj.CoreCompileInputs.cache
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app.deps.json
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app.runtimeconfig.json
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app.runtimeconfig.dev.json
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app.dll
+/home/vend-asfar/Documents/Mustafa's Project/app/bin/Debug/netcoreapp3.1/app.pdb
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.dll
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.pdb
+/home/vend-asfar/Documents/Mustafa's Project/app/obj/Debug/netcoreapp3.1/app.genruntimeconfig.cache
