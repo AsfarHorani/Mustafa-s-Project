@@ -4,36 +4,61 @@ using MySql.Data.MySqlClient;
 namespace newapp
 {
 
-class database{
-      private  string server = "localhost";
-       private  string database = "task1";
-       private  string uid = "root";
-       private  string password = "Constantinople.7";
-       private  string connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-       private MySqlConnection conn;
+class Database{
+     
+    private MySqlConnection connection;
+    private string server;
+    private string database;
+    private string uid;
+    private string password;
 
-         public database(){
-         conn = new MySqlConnection(connectionString);
-
+         public Database(){
+                Initialize();            
          }
 
-    //open connection to database
-    private bool OpenConnection()
+ //Initialize values
+    private void Initialize()
     {
-        try{
+        server = "localhost";
+        database = "task1";
+        uid = "root";
+        password = "Constantinople.7";
+        string connectionString;
+        connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-
-        }catch(Exception ex){
-            Console.WriteLine("We get an error");
-        }
-        conn.open();
+        connection = new MySqlConnection(connectionString);
     }
 
-    //Close connection
-    private bool CloseConnection()
+//open connection to database
+private bool OpenConnection()
+{
+    try
     {
-        conn.close();
+        connection.Open();
+        return true;
     }
+    catch (MySqlException ex)
+    {
+        //When handling errors, you can your application's response based 
+        Console.WriteLine(ex.Message);
+        return false;
+    }
+}
+
+//Close connection
+private bool CloseConnection()
+{
+    try
+    {
+        connection.Close();
+        return true;
+    }
+    catch (MySqlException ex)
+    {
+        Console.WriteLine(ex.Message);
+        return false;
+    }
+}
 }
 
 
