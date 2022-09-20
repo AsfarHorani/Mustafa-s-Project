@@ -7,7 +7,8 @@ namespace newapp
     {
         static void Main(string[] args)
         {
-         string server = "localhost";
+
+               string server = "localhost";
          string database = "task1";
          string uid = "root";
          string password = "Constantinople.7";
@@ -33,7 +34,13 @@ namespace newapp
                 //read the data
                 while (rdr.Read())
                 {
-                    Console.WriteLine(rdr[0] + " -- " + rdr[1] + " -- " + rdr[2]);
+                    Console.WriteLine(rdr.FieldCount);
+                      string row ="";
+             for(int i=0; i<rdr.FieldCount; i++){
+                row+=rdr[i];
+             }
+             Console.WriteLine(row);
+
                 }
                 rdr.Close();
             }
@@ -45,79 +52,81 @@ namespace newapp
 
             Console.WriteLine("Hello World!");
         }
-    }
+          
+        }
+    
 
 
 
-    class User {
+//     class User {
 
  
-  //everything
-  private string name;
-  public string Name {
-    get { return name; }  
-    set { name = value; } 
-  }
-  private int age;
-  public int Age {
-    get { return age; }  
-    set { age = value; } 
-  }
-  private string email;
-  public string Email {
-    get { return email; }   
-    set { email = value; } 
-  }
-  private int phone;
-  public int Phone {
-    get { return phone; }  
-    set { phone = value; } 
-  }
-  private string job;
-  public string Job {
-    get { return job; }   
-    set { job = value; } 
-  }
+//   //everything
+//   private string name;
+//   public string Name {
+//     get { return name; }  
+//     set { name = value; } 
+//   }
+//   private int age;
+//   public int Age {
+//     get { return age; }  
+//     set { age = value; } 
+//   }
+//   private string email;
+//   public string Email {
+//     get { return email; }   
+//     set { email = value; } 
+//   }
+//   private int phone;
+//   public int Phone {
+//     get { return phone; }  
+//     set { phone = value; } 
+//   }
+//   private string job;
+//   public string Job {
+//     get { return job; }   
+//     set { job = value; } 
+//   }
 
-   //<empty>
-   public User(){}
+//    //<empty>
+//    public User(){}
   
-  //email
-   public User(string _email){
-     this.Email = _email;
-   }
-   public User(string _email, string _name, int _age, int _phone, string _job){
-     this.Email = _email;
-     this.Name = _name;
-     this.Age = _age;
-     this.Phone = _phone;
-     this.Job = _job;
-   }
+//   //email
+//    public User(string _email){
+//      this.Email = _email;
+//    }
+//    public User(string _email, string _name, int _age, int _phone, string _job){
+//      this.Email = _email;
+//      this.Name = _name;
+//      this.Age = _age;
+//      this.Phone = _phone;
+//      this.Job = _job;
+//    }
    
-}            
+// }            
 
-class Programmer : User {
-  private int experience;
-  public int Experience {
-    get { return experience; }  
-    set { experience = value; } 
-  }
-  private string programminglanguages;
-  public string Programminglanguages {
-    get { return programminglanguages; }  
-    set { programminglanguages = value; } 
-  }
-  private string favouriteprogramminglanguage;
-  public string Favouriteprogramminglanguage {
-    get { return favouriteprogramminglanguage; }  
-    set { favouriteprogramminglanguage = value; } 
-  }
-  private string achievements;
-  public string Achievements {
-    get { return achievements; }  
-    set { achievements = value; } 
-  }
-}
-}
+// class Programmer : User {
+//   private int experience;
+//   public int Experience {
+//     get { return experience; }  
+//     set { experience = value; } 
+//   }
+//   private string programminglanguages;
+//   public string Programminglanguages {
+//     get { return programminglanguages; }  
+//     set { programminglanguages = value; } 
+//   }
+//   private string favouriteprogramminglanguage;
+//   public string Favouriteprogramminglanguage {
+//     get { return favouriteprogramminglanguage; }  
+//     set { favouriteprogramminglanguage = value; } 
+//   }
+//   private string achievements;
+//   public string Achievements {
+//     get { return achievements; }  
+//     set { achievements = value; } 
+//   }
+// }
+ }
 
 
